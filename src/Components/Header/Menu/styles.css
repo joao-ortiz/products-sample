@@ -1,0 +1,24 @@
+
+.menu-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 3vw;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    position: absolute;
+    background-color: white;
+    transition: all 0.25s ease;
+}
+
+.menu-links {
+    height: 50vh;
+    padding-top: 5vh;
+    width: 50%;
+}
+
+.hidden {
+    top: -100vh;
+}

@@ -1,0 +1,53 @@
+.input-custom-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+}
+
+.input-label {
+    position: absolute;
+    left: 1vw;
+    font-size: inherit;
+    top: 50%;
+    transform: translateY(-50%);
+    color: rgba(255, 255, 255, 0.7);
+    pointer-events: none;
+    transition: all 0.25s ease;
+}
+
+.custom-input {
+    font-size: inherit;
+    background: none;
+    outline: none !important;
+    border: none !important;
+    height: inherit;
+    color: white;
+    padding-left: 1vw;
+    width: 100%;
+}
+
+.custom-input:focus + .input-label, .custom-input:not(.custom-input:invalid) + .input-label {
+    top: -50%;
+    color: white;
+}
+
+.input-button {
+        border: solid rgba(255, 255, 255, 0.7);
+        border-width: 0 5px 5px 0;
+        display: inline-block;
+        padding: 3px;
+        transform: rotate(-45deg);
+        background: none;
+        outline: none;
+        height: 1vw;
+        width: 1vw;
+        align-self: center;
+        transition: 0.25s all;
+}
+
+.input-button:hover {
+    border-color: white;
+}

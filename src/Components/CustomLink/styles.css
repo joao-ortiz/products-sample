@@ -1,0 +1,26 @@
+.link-custom-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    position: relative;
+}
+
+.link-custom-text {
+    font-size: inherit;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: inherit;
+}
+
+.link-custom-container:hover  > .divider {
+    border-color: white;
+}
+
+.arrow-button-custom-link {
+        border: solid black;
+        border-width: 0 3px 3px 0;
+        display: inline-block;
+        justify-self: flex-end;
+}
